@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f2d046e-da23-4457-b83d-97a16e8a143a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
@@ -65,7 +66,9 @@
       <updated>1620491999058</updated>
       <workItem from="1620492000083" duration="1746000" />
       <workItem from="1620556190991" duration="9078000" />
-      <workItem from="1620633272249" duration="9190000" />
+      <workItem from="1620633272249" duration="11136000" />
+      <workItem from="1620660081646" duration="603000" />
+      <workItem from="1620742768169" duration="1841000" />
     </task>
     <servers />
   </component>
@@ -82,6 +85,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="936" height="283" key="GridCell.Tab.0.bottom" timestamp="1620564704290">
