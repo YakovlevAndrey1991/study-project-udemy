@@ -99,8 +99,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const modalTrigger = document.querySelectorAll('[data-modal]'),
         modal = document.querySelector('.modal');
 
-    // modalCloseBtn = document.querySelector('[data-close]');
-
     function openModal() {
         modal.classList.add('show');
         modal.classList.remove('hide');
@@ -117,9 +115,6 @@ window.addEventListener('DOMContentLoaded', () => {
     modalTrigger.forEach(btn => {
         btn.addEventListener('click', openModal);
     });
-
-    // modalCloseBtn.addEventListener('click', closeModal);
-
 
     modal.addEventListener('click', (e) => {
         if (e.target === modal || e.target.getAttribute('data-close') == '') {
@@ -197,11 +192,18 @@ window.addEventListener('DOMContentLoaded', () => {
         return res.json();
     };
 
-    getResource('http://localhost:3000/menu')
+    // getResource('http://localhost:3000/menu')
+    //     .then(data => {
+    //         data.forEach(({img, altimg, title, descr, price}) => {
+    //             new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
+    //         });
+    //     });
+
+    axios.get('http://localhost:3000/menu')
         .then(data => {
-           data.forEach(({img, altimg, title, descr, price}) =>{
-              new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
-           });
+            data.data.forEach(({img, altimg, title, descr, price}) => {
+                new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
+            });
         });
 
     // Forms
@@ -224,7 +226,7 @@ window.addEventListener('DOMContentLoaded', () => {
             headers: {
                 'Content-type': 'application/json'
             },
-            body:data
+            body: data
         });
 
         return res.json();
@@ -246,7 +248,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-                postData('http://localhost:3000/requests', json)
+            postData('http://localhost:3000/requests', json)
                 .then(data => {
                     console.log(data);
                     showThanksModal(message.success);
@@ -256,9 +258,6 @@ window.addEventListener('DOMContentLoaded', () => {
             }).finally(() => {
                 form.reset();
             })
-
-
-
         });
     }
 
@@ -284,10 +283,6 @@ window.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }, 4000)
     }
-
-    // fetch('http://localhost:3000/menu')
-    //     .then(data => data.json())
-    //     .then(res => console.log(res));
 
 
 });
