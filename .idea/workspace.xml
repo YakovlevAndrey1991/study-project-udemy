@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f2d046e-da23-4457-b83d-97a16e8a143a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/sliderStyles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
@@ -83,7 +80,7 @@
       <workItem from="1620827345213" duration="4451000" />
       <workItem from="1620879940053" duration="5248000" />
       <workItem from="1620922985366" duration="1587000" />
-      <workItem from="1621138478842" duration="3717000" />
+      <workItem from="1621138478842" duration="7268000" />
     </task>
     <servers />
   </component>
@@ -103,22 +100,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="936" height="283" key="GridCell.Tab.0.bottom" timestamp="1620564704290">
+    <state width="936" height="283" key="GridCell.Tab.0.bottom" timestamp="1621148100650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620564704290" />
-    <state width="936" height="283" key="GridCell.Tab.0.center" timestamp="1620564704290">
+    <state width="936" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1621148100650" />
+    <state width="936" height="283" key="GridCell.Tab.0.center" timestamp="1621148100650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620564704290" />
-    <state width="936" height="283" key="GridCell.Tab.0.left" timestamp="1620564704289">
+    <state width="936" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1621148100650" />
+    <state width="936" height="283" key="GridCell.Tab.0.left" timestamp="1621148100649">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620564704289" />
-    <state width="936" height="283" key="GridCell.Tab.0.right" timestamp="1620564704290">
+    <state width="936" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1621148100649" />
+    <state width="936" height="283" key="GridCell.Tab.0.right" timestamp="1621148100650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620564704290" />
+    <state width="936" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621148100650" />
     <state width="936" height="347" key="GridCell.Tab.1.bottom" timestamp="1620562968313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
