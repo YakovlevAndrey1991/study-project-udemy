@@ -1,7 +1,5 @@
-function timer() {
+function timer(id, deadLine) {
 // Timer
-
-    const deadLine = '2022-05-11';
 
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(Date()),
@@ -52,7 +50,7 @@ function timer() {
         }
     }
 
-    setClock('.timer', deadLine);
+    setClock(id, deadLine);
 }
 
-module.exports = timer;
+export default timer;
