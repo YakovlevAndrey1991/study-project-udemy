@@ -287,10 +287,11 @@ window.addEventListener('DOMContentLoaded', () => {
     // slider simple
 
     const slides = document.querySelectorAll('.offer__slide'),
-          prev = document.querySelector('.offer__slider-prev'),
-          next = document.querySelector('.offer__slider-next'),
-          total = document.querySelector('#total'),
-          current = document.querySelector('#current');
+        slider = document.querySelector('.offer__slider'),
+        prev = document.querySelector('.offer__slider-prev'),
+        next = document.querySelector('.offer__slider-next'),
+        total = document.querySelector('#total'),
+        current = document.querySelector('#current');
 
     let slideIndex = 1;
 
@@ -300,6 +301,26 @@ window.addEventListener('DOMContentLoaded', () => {
         total.textContent = `0${slides.length}`;
     } else {
         total.textContent = slides.length;
+    }
+
+    slider.style.position = 'relative';
+
+    const indicators = document.createElement('ol'),
+          dots = [];
+    indicators.classList.add('carousel-indicators');
+
+    slider.append(indicators);
+
+    for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement('li');
+        dot.setAttribute('data-slide-to', i + 1);
+        dot.classList.add('dot');
+
+        if (i == 0) {
+            dot.style.opacity = 1;
+        }
+        indicators.append(dot);
+        dots.push(dot);
     }
 
     function showSlides(n) {
@@ -320,6 +341,7 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             current.textContent = slideIndex;
         }
+
     }
 
     function plusSlides(n) {
@@ -333,5 +355,11 @@ window.addEventListener('DOMContentLoaded', () => {
     next.addEventListener('click', () => {
         plusSlides(1);
     });
+
+
+    // Calculator
+
+
+
 
 });
